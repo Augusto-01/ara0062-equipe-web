@@ -16,12 +16,8 @@ CatalogoFlix é um sistema simples para cadastrar e consultar filmes, permitindo
 | Augusto Rezende Levindo | 202602445387 | @Augusto-01 | Líder |
 | Arthur Rezende de Almeida | 202602445298 | @ArthurRezendee | integrante |
 
-Cada integrante acrescenta a **sua própria linha** nesta tabela, pelo GitHub.
-Esse é o commit que registra a sua participação.
 
 ## Estrutura do projeto
-
-Estrutura obrigatória da disciplina. Não renomeie pastas nem arquivos.
 
 O projeto é separado em duas metades: **`frontend/`** guarda o que roda no
 navegador (HTML, CSS, JavaScript e imagens) e **`backend/`** guarda o que roda
@@ -43,10 +39,6 @@ no servidor (PHP).
     │   └─ conexao.php     conexão com o banco (a partir do ciclo 8)
     └─ processa-contato.php  recebe o formulário (a partir do ciclo 8)
 ```
-
-Os dois arquivos `.php` começam vazios, só com um comentário dentro. Eles
-existem desde já para que o lugar do código de servidor esteja combinado quando
-o PHP chegar.
 
 ## Como abrir o projeto
 
