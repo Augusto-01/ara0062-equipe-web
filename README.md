@@ -1,13 +1,11 @@
-# Equipe Web — Escola Delta de Idiomas
+# Equipe Web — CatalogoFlix
 
 Projeto da disciplina **ARA0062 · Desenvolvimento Web em HTML5, CSS, JavaScript
 e PHP** — Centro Universitário Newton Paiva, 2026/2.
 
 ## Tema do projeto
 
-Site de uma escola de idiomas de bairro: apresentação, cursos oferecidos com
-valores e um formulário de contato. Um parágrafo basta — diga o que o site é e
-para quem ele serve.
+CatalogoFlix é um sistema simples para cadastrar e consultar filmes, permitindo adicionar, editar e remover títulos de forma prática e organizada.
 
 ## Equipe
 
