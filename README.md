@@ -17,6 +17,7 @@ CatalogoFlix é um sistema simples para cadastrar e consultar filmes, permitindo
 | Arthur Rezende de Almeida | 202602445298 | @ArthurRezendee | integrante |
 | Igor Da Silva Pascoal Pereira | 202602388031 | @H3mZs | Integrante |
 | Bernardo Rodrigues Dias Da Silva | 202603396428 | @bernardodias1905-web | integrante |
+| Mateus de Sousa Bernardo | 202602653354 | @Matdev6 | integrante |
 
 
 ## Estrutura do projeto
