@@ -5,7 +5,7 @@ e PHP** — Centro Universitário Newton Paiva, 2026/2.
 
 ## Tema do projeto
 
-CatalogoFlix é um sistema simples para cadastrar e consultar filmes, permitindo adicionar, editar e remover títulos de forma prática e organizada.
+CatalogoFlix é um sistema simples para cadastrar e consultar filmes, permitindo adicionar, editar e remover títulos de forma prática e organizada, além de permitir avaliações.
 
 ## Equipe
 
