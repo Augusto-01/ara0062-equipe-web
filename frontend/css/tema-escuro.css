@@ -1,0 +1,11 @@
+/* css/tema-escuro.css — CatalogoFlix, modo escuro */
+:root {
+  --principal:        #F25C6B;
+  --sobre-principal:  #141414;
+  --fundo:            #121212;
+  --superficie:       #1E1E1E;
+  --texto:            #F2F2F2;
+  --apoio:            #FFD60A;
+  --texto-fraco:      #A0A0A0;
+  --linha:            #333333;
+}
