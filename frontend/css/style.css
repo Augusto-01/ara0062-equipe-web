@@ -93,6 +93,68 @@ ul, ol {
 }
 
 /* --------------------------------------------------------------------------
+   3. CABEÇALHO, MENU E TABELA — Igor Da Silva Pascoal Pereira
+   -------------------------------------------------------------------------- */
+
+header {
+  background-color: var(--principal);
+  color: var(--sobre-principal);
+  padding: var(--e-3) var(--e-4);
+}
+
+header h1 {
+  color: var(--sobre-principal);
+  margin: 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: var(--e-3);
+  padding: 0;
+  margin: var(--e-2) 0 0;
+}
+
+nav a {
+  color: var(--sobre-principal);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  background-color: var(--superficie);
+  margin-bottom: var(--e-3);
+}
+
+caption {
+  text-align: left;
+  font-family: var(--fonte-titulo);
+  margin-bottom: var(--e-1);
+}
+
+thead th {
+  background-color: var(--principal);
+  color: var(--sobre-principal);
+  padding: var(--e-1) var(--e-2);
+  text-align: left;
+}
+
+td {
+  padding: var(--e-1) var(--e-2);
+  border-bottom: 1px solid var(--linha);
+}
+
+tbody tr:nth-child(even) {
+  background-color: var(--fundo);
+}
+
+/* --------------------------------------------------------------------------
    4. FORMULÁRIO, BOTÕES E RODAPÉ — Mateus de Sousa Bernardo
    -------------------------------------------------------------------------- */
 
