@@ -49,6 +49,50 @@ section {
 }
 
 /* --------------------------------------------------------------------------
+   2. TIPOGRAFIA, PÁGINA E CONTEÚDO — Bernardo Rodrigues Dias Da Silva
+   -------------------------------------------------------------------------- */
+
+h1, h2, h3 {
+  font-family: var(--fonte-titulo);
+  color: var(--texto);
+}
+
+h1 { font-size: 2.5rem; margin-bottom: var(--e-3); }
+h2 { font-size: 1.75rem; margin-bottom: var(--e-2); }
+h3 { font-size: 1.25rem; margin-bottom: var(--e-1); }
+
+p {
+  color: var(--texto);
+  margin-bottom: var(--e-2);
+}
+
+p.texto-fraco,
+.texto-fraco {
+  color: var(--texto-fraco);
+  font-size: 0.9rem;
+}
+
+a {
+  color: var(--principal);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  border-radius: 4px;
+}
+
+ul, ol {
+  padding-left: var(--e-3);
+  margin-bottom: var(--e-2);
+}
+
+/* --------------------------------------------------------------------------
    4. FORMULÁRIO, BOTÕES E RODAPÉ — Mateus de Sousa Bernardo
    -------------------------------------------------------------------------- */
 
