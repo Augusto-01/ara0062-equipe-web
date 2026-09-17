@@ -47,3 +47,88 @@ main {
 section {
   margin-bottom: var(--e-4);
 }
+
+/* --------------------------------------------------------------------------
+   4. FORMULÁRIO, BOTÕES E RODAPÉ — Mateus de Sousa Bernardo
+   -------------------------------------------------------------------------- */
+
+fieldset {
+  border: 1px solid var(--linha);
+  border-radius: 8px;
+  padding: var(--e-3);
+  margin-bottom: var(--e-3);
+  background-color: var(--superficie);
+}
+
+legend {
+  font-family: var(--fonte-titulo);
+  padding: 0 var(--e-1);
+}
+
+label {
+  display: block;
+  margin-bottom: var(--e-1);
+  font-weight: 600;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+textarea,
+select {
+  width: 100%;
+  padding: var(--e-1);
+  margin-bottom: var(--e-2);
+  border: 1px solid var(--linha);
+  border-radius: 4px;
+  font-family: var(--fonte-corpo);
+}
+
+input:focus,
+textarea:focus,
+select:focus,
+button:focus,
+a:focus {
+  outline: 3px solid var(--apoio);
+  outline-offset: 2px;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  padding: var(--e-1) var(--e-3);
+  font-family: var(--fonte-corpo);
+  font-weight: 600;
+}
+
+button.principal,
+button[type="submit"] {
+  background-color: var(--principal);
+  color: var(--sobre-principal);
+}
+
+button.principal:hover,
+button[type="submit"]:hover {
+  background-color: #9c0e18;
+}
+
+button.secundario,
+button[type="reset"] {
+  background-color: transparent;
+  color: var(--principal);
+  border: 1px solid var(--principal);
+}
+
+button.secundario:hover,
+button[type="reset"]:hover {
+  background-color: var(--fundo);
+}
+
+footer {
+  text-align: center;
+  padding: var(--e-3);
+  color: var(--texto-fraco);
+  border-top: 1px solid var(--linha);
+  margin-top: var(--e-4);
+}
