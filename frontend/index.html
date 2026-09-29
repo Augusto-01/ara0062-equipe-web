@@ -1,28 +1,31 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Página pessoal feita nas aulas 02 e 03 de ARA0062.">
-    <title>Fulano de Tal — página pessoal</title>
 
-    <!--
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Página pessoal feita nas aulas 02 e 03 de ARA0062.">
+	<title>Fulano de Tal — página pessoal</title>
+
+	<!--
       A ligação com a folha de estilos. A partir daqui, aparência é assunto
       do css/estilo.css: este arquivo volta a ser só estrutura e conteúdo.
 
       href="css/estilo.css" é um caminho relativo A ESTE arquivo. Como o
       index.html está na raiz do frontend/, a pasta css/ está ao lado dele.
     -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Inter:wght@400;700&display=swap"
+		rel="stylesheet">
 
-<link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="css/tema-escuro.css">
-  </head>
-  <body>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/tema-escuro.css">
+</head>
 
-    <!--
+<body>
+
+	<!--
       Este arquivo é o index.html da aula 03 depois da aula 04, já dentro da
       estrutura obrigatória do ciclo 3 (frontend/ e backend/).
 
@@ -33,155 +36,156 @@
       É o gabarito da entrega 3 do projeto integrador.
     -->
 
-    <header>
-      <h1>Fulano de Tal</h1>
-      <p>Estudante de Sistemas de Informação</p>
-    </header>
+	<header>
+		<h1>Fulano de Tal</h1>
+		<p>Estudante de Sistemas de Informação</p>
+	</header>
 
-    <!-- Aula 03: os links soltos viraram uma lista, porque um menu é um conjunto de itens. -->
-    <nav>
-      <ul>
-        <li><a href="#sobre">Sobre mim</a></li>
-        <li><a href="#gostos">O que eu gosto</a></li>
-        <li><a href="#horarios">Meus horários</a></li>
-        <li><a href="#faculdade">Onde eu estudo</a></li>
-        <li><a href="#contato">Fale comigo</a></li>
-      </ul>
-    </nav>
+	<!-- Aula 03: os links soltos viraram uma lista, porque um menu é um conjunto de itens. -->
+	<nav>
+		<ul>
+			<li><a href="#sobre">Sobre mim</a></li>
+			<li><a href="#gostos">O que eu gosto</a></li>
+			<li><a href="#horarios">Meus horários</a></li>
+			<li><a href="#faculdade">Onde eu estudo</a></li>
+			<li><a href="#contato">Fale comigo</a></li>
+		</ul>
+	</nav>
 
-    <main>
+	<main>
 
-      <section id="sobre">
-        <h2>Sobre mim</h2>
-        <p>
-          Estudo Sistemas de Informação e estou aprendendo a construir páginas
-          web. Esta é a <strong>primeira página</strong> que escrevi inteiramente
-          à mão, e ela cresce a cada aula.
-        </p>
-      </section>
+		<section id="sobre">
+			<h2>Sobre mim</h2>
+			<p>
+				Estudo Sistemas de Informação e estou aprendendo a construir páginas
+				web. Esta é a <strong>primeira página</strong> que escrevi inteiramente
+				à mão, e ela cresce a cada aula.
+			</p>
+		</section>
 
-      <section id="gostos">
-        <h2>O que eu gosto</h2>
-        <p>Música, futebol e videogame.</p>
+		<section id="gostos">
+			<h2>O que eu gosto</h2>
+			<p>Música, futebol e videogame.</p>
 
-        <!-- ol porque a ordem significa algo: é um ranking. -->
-        <h3>Minhas três séries favoritas, em ordem</h3>
-        <ol>
-          <li>A primeira</li>
-          <li>A segunda</li>
-          <li>A terceira</li>
-        </ol>
+			<!-- ol porque a ordem significa algo: é um ranking. -->
+			<h3>Minhas três séries favoritas, em ordem</h3>
+			<ol>
+				<li>A primeira</li>
+				<li>A segunda</li>
+				<li>A terceira</li>
+			</ol>
 
-        <!-- ul porque a ordem não significa nada. -->
-        <h3>Instrumentos que eu quero aprender</h3>
-        <ul>
-          <li>Violão</li>
-          <li>Baixo</li>
-          <li>Bateria</li>
-        </ul>
+			<!-- ul porque a ordem não significa nada. -->
+			<h3>Instrumentos que eu quero aprender</h3>
+			<ul>
+				<li>Violão</li>
+				<li>Baixo</li>
+				<li>Bateria</li>
+			</ul>
 
-        <img src="img/foto.jpg" alt="Foto do campus Newton Paiva" width="400">
-      </section>
+			<img src="img/foto.jpg" alt="Foto do campus Newton Paiva" width="400">
+		</section>
 
-      <section id="horarios">
-        <h2>Meus horários</h2>
+		<section id="horarios">
+			<h2>Meus horários</h2>
 
-        <table>
-          <caption>Aulas do semestre 2026/2</caption>
+			<table>
+				<caption>Aulas do semestre 2026/2</caption>
 
-          <thead>
-            <tr>
-              <th scope="col">Dia</th>
-              <th scope="col">Disciplina</th>
-              <th scope="col">Sala</th>
-            </tr>
-          </thead>
+				<thead>
+					<tr>
+						<th scope="col">Dia</th>
+						<th scope="col">Disciplina</th>
+						<th scope="col">Sala</th>
+					</tr>
+				</thead>
 
-          <tbody>
-            <tr>
-              <th scope="row">Segunda</th>
-              <td>Desenvolvimento Web</td>
-              <td>Lab 3</td>
-            </tr>
-            <tr>
-              <th scope="row">Quarta</th>
-              <td>Banco de Dados</td>
-              <td>Sala 214</td>
-            </tr>
-            <tr>
-              <th scope="row">Quinta</th>
-              <td>Estrutura de Dados</td>
-              <td>Lab 1</td>
-            </tr>
-          </tbody>
-        </table>
-      </section>
+				<tbody>
+					<tr>
+						<th scope="row">Segunda</th>
+						<td>Desenvolvimento Web</td>
+						<td>Lab 3</td>
+					</tr>
+					<tr>
+						<th scope="row">Quarta</th>
+						<td>Banco de Dados</td>
+						<td>Sala 214</td>
+					</tr>
+					<tr>
+						<th scope="row">Quinta</th>
+						<td>Estrutura de Dados</td>
+						<td>Lab 1</td>
+					</tr>
+				</tbody>
+			</table>
+		</section>
 
-      <section id="faculdade">
-        <h2>Onde eu estudo</h2>
-        <p>
-          <a href="https://newtonpaiva.br">Centro Universitário Newton Paiva</a>
-        </p>
-      </section>
+		<section id="faculdade">
+			<h2>Onde eu estudo</h2>
+			<p>
+				<a href="https://newtonpaiva.br">Centro Universitário Newton Paiva</a>
+			</p>
+		</section>
 
-      <section id="contato">
-        <h2>Fale comigo</h2>
+		<section id="contato">
+			<h2>Fale comigo</h2>
 
-        <!-- action="#" só para o formulário existir sem servidor. No ciclo 8 vira um .php. -->
-        <form action="#" method="post">
-          <fieldset>
-            <legend>Seus dados</legend>
+			<!-- action="#" só para o formulário existir sem servidor. No ciclo 8 vira um .php. -->
+			<form action="#" method="post">
+				<fieldset>
+					<legend>Seus dados</legend>
 
-            <div>
-              <label for="nome">Nome</label>
-              <input type="text" id="nome" name="nome" required>
-            </div>
+					<div>
+						<label for="nome">Nome</label>
+						<input type="text" id="nome" name="nome" required>
+					</div>
 
-            <div>
-              <label for="email">E-mail</label>
-              <input type="email" id="email" name="email" required>
-            </div>
+					<div>
+						<label for="email">E-mail</label>
+						<input type="email" id="email" name="email" required>
+					</div>
 
-            <div>
-              <label for="assunto">Assunto</label>
-              <select id="assunto" name="assunto">
-                <option value="duvida">Uma dúvida</option>
-                <option value="trabalho">Uma proposta de trabalho</option>
-                <option value="outro">Outro</option>
-              </select>
-            </div>
+					<div>
+						<label for="assunto">Assunto</label>
+						<select id="assunto" name="assunto">
+							<option value="duvida">Uma dúvida</option>
+							<option value="trabalho">Uma proposta de trabalho</option>
+							<option value="outro">Outro</option>
+						</select>
+					</div>
 
-            <div>
-              <label for="mensagem">Mensagem</label>
-              <textarea id="mensagem" name="mensagem" rows="5" cols="40" required></textarea>
-            </div>
+					<div>
+						<label for="mensagem">Mensagem</label>
+						<textarea id="mensagem" name="mensagem" rows="5" cols="40" required></textarea>
+					</div>
 
-            <div>
-              <input type="checkbox" id="copia" name="copia" value="sim">
-              <label for="copia">Quero receber uma cópia desta mensagem</label>
-            </div>
-          </fieldset>
+					<div>
+						<input type="checkbox" id="copia" name="copia" value="sim">
+						<label for="copia">Quero receber uma cópia desta mensagem</label>
+					</div>
+				</fieldset>
 
-          <div>
-            <button type="submit">Enviar</button>
-            <button type="reset">Limpar</button>
-          </div>
-        </form>
-      </section>
+				<div>
+					<button type="submit">Enviar</button>
+					<button type="reset">Limpar</button>
+				</div>
+			</form>
+		</section>
 
-    </main>
+	</main>
 
-    <aside>
-      <h2>Links que eu uso</h2>
-      <ul>
-        <li><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML">Referência de HTML (MDN)</a></li>
-        <li><a href="https://validator.w3.org">Validador do W3C</a></li>
-      </ul>
-    </aside>
+	<aside>
+		<h2>Links que eu uso</h2>
+		<ul>
+			<li><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML">Referência de HTML (MDN)</a></li>
+			<li><a href="https://validator.w3.org">Validador do W3C</a></li>
+		</ul>
+	</aside>
 
-    <footer>
-      <p>Fulano de Tal &middot; 2026 &middot; ARA0062 &middot; Newton Paiva</p>
-    </footer>
+	<footer>
+		<p>Fulano de Tal &middot; 2026 &middot; ARA0062 &middot; Newton Paiva</p>
+	</footer>
 
-  </body>
+</body>
+
 </html>
