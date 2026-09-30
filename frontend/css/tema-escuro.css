@@ -2,6 +2,7 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --principal: #F25C6B;
+    --principal-escura: #E03A4B;
     --sobre-principal: #141414;
     --fundo: #121212;
     --superficie: #1E1E1E;
