@@ -2,171 +2,272 @@
 <html lang="pt-BR">
 
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="CatalogoFlix — catálogo pessoal de filmes assistidos, com avaliação e ranking.">
-	<title>CatalogoFlix</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Catálogo pessoal de filmes assistidos, com avaliações e ranking.">
+    <meta name="theme-color" content="#141414">
+    <title>CatalogoFlix</title>
 
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Inter:wght@400;700&display=swap"
-		rel="stylesheet">
-
-	<link rel="stylesheet" href="css/estilo.css">
-	<link rel="stylesheet" href="css/tema-escuro.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/tema-escuro.css">
+    <script src="js/script.js" defer></script>
 </head>
 
 <body>
-	<header class="hero">
-		<h1>CatalogoFlix</h1>
-		<p>Catálogo pessoal de filmes assistidos, com avaliação e ranking.</p>
-		<a href="#destino">Criar conta</a>
-	</header>
+    <nav class="sidebar" aria-label="Menu principal">
+        <a class="logo" href="#inicio" aria-label="CatalogoFlix início">CATALOGO<span>FLIX</span></a>
 
-	<nav>
-		<ul>
-			<li><a href="#sobre">Sobre mim</a></li>
-			<li><a href="#gostos">O que eu gosto</a></li>
-			<li><a href="#horarios">Meus horários</a></li>
-			<li><a href="#faculdade">Onde eu estudo</a></li>
-			<li><a href="#contato">Fale comigo</a></li>
-		</ul>
-	</nav>
+        <ul>
+            <li><a href="#top10">Top 10</a></li>
+            <li><a href="#assistidos">Filmes</a></li>
+            <li><a href="#adicionar">Adicionar filme</a></li>
+            <li><a href="#perfil">Meu perfil</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
 
-	<main>
+        <a class="nav-add" href="#adicionar" aria-label="Adicionar filme">
+            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                <path d="M12 5v14M5 12h14" />
+            </svg>
+        </a>
+    </nav>
 
-		<section id="sobre">
-			<h2>Sobre mim</h2>
-			<p>
-				Estudo Sistemas de Informação e estou aprendendo a construir páginas
-				web. Esta é a <strong>primeira página</strong> que escrevi inteiramente
-				à mão, e ela cresce a cada aula.
-			</p>
-		</section>
+    <header class="hero" id="inicio">
+        <div class="hero-shade"></div>
+        <div class="hero-content">
+            <p class="hero-label">CATALOGOFLIX ORIGINAL</p>
+            <h1>Seu catálogo.<br>Suas histórias.</h1>
+            <p class="hero-description">Organize os filmes que você já assistiu e dê sua nota para cada um.</p>
+            <div class="hero-buttons">
+                <a class="hero-button hero-button-light" href="#assistidos">
+                    <span aria-hidden="true">▶</span> Ver filmes
+                </a>
+                <a class="hero-button hero-button-muted" href="#adicionar">
+                    <span aria-hidden="true">＋</span> Adicionar filme
+                </a>
+            </div>
+        </div>
+        <div class="hero-pagination" aria-hidden="true"><span></span><span></span><span></span></div>
+    </header>
 
-		<section id="gostos">
-			<h2>O que eu gosto</h2>
-			<p>Música, futebol e videogame.</p>
+    <main>
+        <section id="top10" class="catalog-section">
+            <div class="section-title">
+                <h2>Meu Top 10</h2>
+                <p class="texto-fraco">Seus filmes favoritos, em ordem de avaliação.</p>
+            </div>
 
-			<!-- ol porque a ordem significa algo: é um ranking. -->
-			<h3>Minhas três séries favoritas, em ordem</h3>
-			<ol>
-				<li>A primeira</li>
-				<li>A segunda</li>
-				<li>A terceira</li>
-			</ol>
+            <ol class="rank-row" id="lista-top10">
+                <li class="rank-card"><span class="rank-num" aria-hidden="true">1</span>
+                    <div class="rank-poster" role="img" aria-label="Pôster do primeiro filme"></div>
+                </li>
+                <li class="rank-card"><span class="rank-num" aria-hidden="true">2</span>
+                    <div class="rank-poster" role="img" aria-label="Pôster do segundo filme"></div>
+                </li>
+                <li class="rank-card"><span class="rank-num" aria-hidden="true">3</span>
+                    <div class="rank-poster" role="img" aria-label="Pôster do terceiro filme"></div>
+                </li>
+                <li class="rank-card"><span class="rank-num" aria-hidden="true">4</span>
+                    <div class="rank-poster" role="img" aria-label="Pôster do quarto filme"></div>
+                </li>
+                <li class="rank-card"><span class="rank-num" aria-hidden="true">5</span>
+                    <div class="rank-poster" role="img" aria-label="Pôster do quinto filme"></div>
+                </li>
+                <li class="rank-card"><span class="rank-num" aria-hidden="true">6</span>
+                    <div class="rank-poster" role="img" aria-label="Pôster do sexto filme"></div>
+                </li>
+                <li class="rank-card"><span class="rank-num" aria-hidden="true">7</span>
+                    <div class="rank-poster" role="img" aria-label="Pôster do sétimo filme"></div>
+                </li>
+                <li class="rank-card"><span class="rank-num" aria-hidden="true">8</span>
+                    <div class="rank-poster" role="img" aria-label="Pôster do oitavo filme"></div>
+                </li>
+                <li class="rank-card"><span class="rank-num" aria-hidden="true">9</span>
+                    <div class="rank-poster" role="img" aria-label="Pôster do nono filme"></div>
+                </li>
+                <li class="rank-card"><span class="rank-num" aria-hidden="true">10</span>
+                    <div class="rank-poster" role="img" aria-label="Pôster do décimo filme"></div>
+                </li>
+            </ol>
+        </section>
 
-			<!-- ul porque a ordem não significa nada. -->
-			<h3>Instrumentos que eu quero aprender</h3>
-			<ul>
-				<li>Violão</li>
-				<li>Baixo</li>
-				<li>Bateria</li>
-			</ul>
+        <section id="assistidos" class="catalog-section">
+            <div class="section-title section-title-row">
+                <div>
+                    <h2>Filmes assistidos</h2>
+                    <p class="texto-fraco">Seus filmes adicionados recentemente aparecem aqui.</p>
+                </div>
+                <span class="movie-total"><span id="total-filmes">0</span> filmes</span>
+            </div>
 
-			<img src="img/foto.jpg" alt="Foto do campus Newton Paiva" width="400">
-		</section>
+            <div class="catalog-controls">
+                <div class="category-list" aria-label="Categorias de filmes">
+                    <button type="button" class="category-chip active">Todos</button>
+                    <button type="button" class="category-chip">Ação</button>
+                    <button type="button" class="category-chip">Aventura</button>
+                    <button type="button" class="category-chip">Biografia</button>
+                    <button type="button" class="category-chip">Crime</button>
+                    <button type="button" class="category-chip">Comédia</button>
+                    <button type="button" class="category-chip">Drama</button>
+                </div>
+                <label class="sort-control" for="ordenacao">Ordenar por
+                    <select id="ordenacao" name="ordenacao">
+                        <option value="recentes">Mais recentes</option>
+                        <option value="alfabetica-asc">Nome (A–Z)</option>
+                        <option value="alfabetica-desc">Nome (Z–A)</option>
+                        <option value="nota">Melhor avaliação</option>
+                    </select>
+                </label>
+            </div>
 
-		<section id="horarios">
-			<h2>Meus horários</h2>
+            <div class="movie-grid" id="lista-filmes">
+            </div>
+        </section>
 
-			<table>
-				<caption>Aulas do semestre 2026/2</caption>
+        <section id="adicionar" class="form-section">
+            <h2>Adicionar filme</h2>
+            <p class="texto-fraco">Registre um filme que você assistiu.</p>
 
-				<thead>
-					<tr>
-						<th scope="col">Dia</th>
-						<th scope="col">Disciplina</th>
-						<th scope="col">Sala</th>
-					</tr>
-				</thead>
+            <form class="movie-form" id="form-filme" action="../backend/salvar-filme.php" method="post"
+                enctype="multipart/form-data">
+                <fieldset>
+                    <legend>Informações do filme</legend>
+                    <div>
+                        <label for="titulo">Título do filme</label>
+                        <input type="text" id="titulo" name="titulo" placeholder="Digite o nome do filme" required>
+                    </div>
+                    <div>
+                        <label for="descricao">O que você achou do filme?</label>
+                        <textarea id="descricao" name="descricao" rows="4"
+                            placeholder="Escreva uma descrição ou opinião..."></textarea>
+                    </div>
+                    <p class="rotulo">Sua nota</p>
+                    <div class="star-rating" role="radiogroup" aria-label="Escolha uma nota de 1 a 5 estrelas">
+                        <input type="radio" id="nota5" name="nota" value="5" required><label for="nota5"
+                            title="5 estrelas">★</label>
+                        <input type="radio" id="nota4" name="nota" value="4"><label for="nota4"
+                            title="4 estrelas">★</label>
+                        <input type="radio" id="nota3" name="nota" value="3"><label for="nota3"
+                            title="3 estrelas">★</label>
+                        <input type="radio" id="nota2" name="nota" value="2"><label for="nota2"
+                            title="2 estrelas">★</label>
+                        <input type="radio" id="nota1" name="nota" value="1"><label for="nota1"
+                            title="1 estrela">★</label>
+                    </div>
+                </fieldset>
+                <button class="form-submit" type="submit">Salvar filme</button>
+                <button class="form-reset" type="reset">Limpar campos</button>
+                <p class="aviso" id="aviso-filme" role="status"></p>
+            </form>
+        </section>
 
-				<tbody>
-					<tr>
-						<th scope="row">Segunda</th>
-						<td>Desenvolvimento Web</td>
-						<td>Lab 3</td>
-					</tr>
-					<tr>
-						<th scope="row">Quarta</th>
-						<td>Banco de Dados</td>
-						<td>Sala 214</td>
-					</tr>
-					<tr>
-						<th scope="row">Quinta</th>
-						<td>Estrutura de Dados</td>
-						<td>Lab 1</td>
-					</tr>
-				</tbody>
-			</table>
-		</section>
+        <section id="perfil" class="form-section profile-section">
+            <div class="profile-heading">
+                <div>
+                    <p class="profile-kicker">SUA JORNADA NO CINEMA</p>
+                    <h2>Meu perfil</h2>
+                </div>
+                <span class="profile-member">MEMBRO CATALOGOFLIX</span>
+            </div>
 
-		<section id="faculdade">
-			<h2>Onde eu estudo</h2>
-			<p>
-				<a href="https://newtonpaiva.br">Centro Universitário Newton Paiva</a>
-			</p>
-		</section>
+            <div class="profile-panel">
+                <div class="profile-identity">
+                    <div class="avatar" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                            <circle cx="12" cy="8" r="3.5"></circle>
+                            <path d="M5 20c.6-3.5 3.1-5.3 7-5.3s6.4 1.8 7 5.3"></path>
+                        </svg>
+                    </div>
+                    <div class="profile-name">
+                        <h3 id="nome-perfil">Cinéfilo</h3>
+                        <p>Seu espaço, suas histórias.</p>
+                    </div>
+                    <label class="profile-edit">
+                        <span>Editar nome</span>
+                        <input type="text" id="editar-nome-perfil" maxlength="32" placeholder="Seu nome">
+                        <button type="button" id="salvar-nome-perfil">Salvar</button>
+                    </label>
+                </div>
 
-		<section id="contato">
-			<h2>Fale comigo</h2>
+                <div class="profile-stats" aria-label="Estatísticas do perfil">
+                    <article class="profile-stat">
+                        <span class="profile-stat-icon">▣</span>
+                        <strong id="total-filmes-perfil">0</strong>
+                        <span>Filmes assistidos</span>
+                    </article>
+                    <article class="profile-stat">
+                        <span class="profile-stat-icon">★</span>
+                        <strong id="media-notas">–</strong>
+                        <span>Nota média</span>
+                    </article>
+                    <article class="profile-stat">
+                        <span class="profile-stat-icon">♛</span>
+                        <strong id="melhor-nota">–</strong>
+                        <span>Melhor avaliação</span>
+                    </article>
+                </div>
 
-			<!-- action="#" só para o formulário existir sem servidor. No ciclo 8 vira um .php. -->
-			<form action="#" method="post">
-				<fieldset>
-					<legend>Seus dados</legend>
+                <div class="profile-recent">
+                    <div class="profile-recent-heading">
+                        <div>
+                            <h3>Adicionados recentemente</h3>
+                            <p>Os últimos filmes da sua coleção</p>
+                        </div>
+                        <a href="#assistidos">Ver catálogo <span aria-hidden="true">→</span></a>
+                    </div>
+                    <div id="perfil-recentes" class="profile-recent-list">
+                        <p class="profile-empty">Seus filmes recentes aparecerão aqui quando você adicionar títulos.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-					<div>
-						<label for="nome">Nome</label>
-						<input type="text" id="nome" name="nome" required>
-					</div>
+        <section id="contato" class="form-section">
+            <h2>Fale conosco</h2>
+            <p class="texto-fraco">Envie uma dúvida, sugestão ou mensagem.</p>
+            <form id="form-contato" action="../backend/processa-contato.php" method="post">
+                <fieldset>
+                    <legend>Seus dados</legend>
+                    <div>
+                        <label for="nome">Nome</label>
+                        <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+                    </div>
+                    <div>
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" placeholder="exemplo@email.com" required>
+                    </div>
+                    <div>
+                        <label for="assunto">Assunto</label>
+                        <select id="assunto" name="assunto">
+                            <option value="duvida">Dúvida</option>
+                            <option value="sugestao">Sugestão</option>
+                            <option value="outro">Outro</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="mensagem">Mensagem</label>
+                        <textarea id="mensagem" name="mensagem" rows="5" placeholder="Escreva sua mensagem..."
+                            required></textarea>
+                    </div>
+                    <div class="checkbox-field">
+                        <input type="checkbox" id="copia" name="copia" value="sim">
+                        <label for="copia">Quero receber uma cópia desta mensagem</label>
+                    </div>
+                </fieldset>
+                <button class="form-submit" type="submit">Enviar mensagem</button>
+                <button class="form-reset" type="reset">Limpar campos</button>
+                <p class="aviso" id="aviso-contato" role="status"></p>
+            </form>
+        </section>
+    </main>
 
-					<div>
-						<label for="email">E-mail</label>
-						<input type="email" id="email" name="email" required>
-					</div>
-
-					<div>
-						<label for="assunto">Assunto</label>
-						<select id="assunto" name="assunto">
-							<option value="duvida">Uma dúvida</option>
-							<option value="trabalho">Uma proposta de trabalho</option>
-							<option value="outro">Outro</option>
-						</select>
-					</div>
-
-					<div>
-						<label for="mensagem">Mensagem</label>
-						<textarea id="mensagem" name="mensagem" rows="5" cols="40" required></textarea>
-					</div>
-
-					<div>
-						<input type="checkbox" id="copia" name="copia" value="sim">
-						<label for="copia">Quero receber uma cópia desta mensagem</label>
-					</div>
-				</fieldset>
-
-				<div>
-					<button type="submit">Enviar</button>
-					<button type="reset">Limpar</button>
-				</div>
-			</form>
-		</section>
-
-	</main>
-
-	<aside>
-		<h2>Links que eu uso</h2>
-		<ul>
-			<li><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML">Referência de HTML (MDN)</a></li>
-			<li><a href="https://validator.w3.org">Validador do W3C</a></li>
-		</ul>
-	</aside>
-
-	<footer>
-		<p>Fulano de Tal &middot; 2026 &middot; ARA0062 &middot; Newton Paiva</p>
-	</footer>
-
+    <footer>
+        <p>CatalogoFlix · 2026 · ARA0062 · Newton Paiva</p>
+    </footer>
 </body>
 
 </html>
