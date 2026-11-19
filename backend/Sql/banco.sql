@@ -1,0 +1,24 @@
+CREATE DATABASE IF NOT EXISTS catalogoflix CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+USE catalogoflix;
+
+CREATE TABLE IF NOT EXISTS filmes (
+  id         INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+  titulo     VARCHAR(150) NOT NULL,
+  descricao  TEXT NULL,
+  nota       TINYINT UNSIGNED NOT NULL,
+  capa       VARCHAR(40) NULL,
+  imdb_id    VARCHAR(20) NULL,
+  poster_url TEXT NULL,
+  criado_em  TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  CONSTRAINT chk_nota CHECK (nota BETWEEN 1 AND 5)
+);
+
+CREATE TABLE IF NOT EXISTS contatos (
+  id        INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+  nome      VARCHAR(100) NOT NULL,
+  email     VARCHAR(150) NOT NULL,
+  assunto   ENUM('duvida', 'sugestao', 'outro') NOT NULL,
+  mensagem  TEXT NOT NULL,
+  copia     TINYINT(1) NOT NULL DEFAULT 0,
+  criado_em TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
